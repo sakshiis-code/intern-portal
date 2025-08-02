@@ -7,7 +7,7 @@ function Dashboard({ onLogout }) {
 
   // Fetch user data
   useEffect(() => {
-    fetch('http://localhost:5000/api/intern')
+    fetch("https://intern-portal-32ao.onrender.com/api/intern")
       .then(res => res.json())
       .then(json => setData(json))
       .catch(err => console.error('Error fetching intern data:', err));
